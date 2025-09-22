@@ -7,24 +7,28 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <div> <input type="text" id="search" placeholder="Search for songs or artists..." />
+
+<ul id="song-list"></ul>
+ </div>
      <div class="player">
     <div class="cover">
       <img src="Music/ganapatibapa.jpg" id="cover" alt="Cover" />
     </div>
     <h2 id="title">Ganesh Stuti</h2>
     <h3 id="artist">Dark Devil</h3>
-
     <audio id="audio" src="Music/Ganeshji shloka.mp3"></audio>
-
     <div class="controls">
       <button id="prev">⏮️</button>
       <button id="play">▶️</button>
       <button id="next">⏭️</button>
-    </div>
-
-    <input type="range" id="progress" value="0" />
+    </div>    
+    <div class="time-controls">
+  <span id="current-time">0:00</span>
+  <input type="range" id="progress" value="0" />
+  <span id="duration">0:00</span>
+</div>
   </div>
-
   <script src="script.js"></script>
 </body>
 </html>
