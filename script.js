@@ -72,5 +72,14 @@ progress.addEventListener("input", () => {
   audio.currentTime = (progress.value * audio.duration) / 100;
 });
 
+audio.addEventListener("ended", () => {
+  currentSong = (currentSong + 1) % songs.length;
+  loadSong(songs[currentSong]);
+  playSong();
+  isPlaying = true;
+});
+
+
 // Load first song
 loadSong(songs[currentSong]);
+
