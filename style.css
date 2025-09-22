@@ -1,3 +1,32 @@
+
+#search {
+  width: 90%;
+  padding: 10px;
+  margin: 20px auto;
+  display: block;
+  font-size: 16px;
+  border: 5px solid #ee0a0a;
+  border-radius: 20px;
+}
+
+#song-list {
+  list-style: none;
+  padding: 0;
+  max-height: 300px;
+  overflow-y: auto;
+  margin-bottom: 20px;
+}
+
+#song-list li {
+  padding: 10px;
+  border-bottom: 1px solid #eee;
+  cursor: pointer;
+}
+
+#song-list li:hover {
+  background-color: #f0f0f0;
+}
+
 body {
   background: #121212;
   color: #fff;
@@ -36,3 +65,23 @@ button {
   width: 100%;
   margin-top: 1rem;
 }
+
+.time-controls {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 90%;
+  margin: 10px auto;
+  font-size: 14px;
+  color: #333;
+}
+
+#progress {
+  flex-grow: 1;
+  margin: 0 10px;
+}
+#current-time, #duration {
+  width: 40px;
+  text-align: center;
+}
+
